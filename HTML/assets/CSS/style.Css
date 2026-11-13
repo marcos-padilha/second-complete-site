@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style:none;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.menu ul a {
+    transition: all ease-in-out 0.2s;
+    margin: 0;
+    display:block;
+    padding: 15px 15vw;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+
+.menu ul a:hover {
+    padding: 25px 15vw;
+    background:  rgba(0, 0, 0, 0.3);
+}
+
+.menu1 {
+    background: black;
+    margin:0 auto;
+    padding-top: 50px;
+    height: 150vh;
+    width: 100%;
+}
+
+.menu1 div {
+    color:aliceblue;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu1 h2 {
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.textos {
+    position:relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 50px;
+    height: 250vh;
+    width: 100%;
+    color: aliceblue;
+}
+
+.textos .background-poemas {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Imagens/20241126_050120.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(5px);
+    transform: scale(1.01);
+}
+
+.textos .conteudo-poemas {
+    position: relative;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.textos div h2 {
+    font-size: 50px;
+    margin-top: 30px;
+    display:block;
+    width: 100%;
+}
+
+.textos .poemas {
+    position: relative;
+    margin: 2.5vw 0 0 2.5vw;
+    background: rgba(0, 0, 0, 0.5);
+    list-style: none;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.textos .poemas li {
+    flex: 0 0 calc(33.33% - 1vw);
+}
+
+.textos .poemas a {
+    transition: all ease-in-out 0.2s;
+    display:block;
+    color: aliceblue;
+    padding: 3vw 6vw;
+    text-decoration: none;
+    justify-content: center;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.textos .poemas a:hover {  
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4vw 7vw;
+}
+
+.textos .historias {
+    margin: 30px 0 0 30px;
+    background: rgba(0, 0, 0, 0.5);
+    list-style: none;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+.textos .historias a {
+    transition: all ease-in-out 0.2s;
+    display:block;
+    color: aliceblue;
+    padding: 4.5vw 24vw;
+    text-decoration: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.textos .historias a:hover {  
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5.5vw 34vw;
+}
+
+.sobre {
+    position:relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 50px;
+    height: 250vh;
+    width: 100%;
+    color: aliceblue;
+}
+
+.sobre .background {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Imagens/fe77ad63-41f8-4d0f-9223-cf241bae623d.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(5px);
+}
+
+.sobre .separacao {
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+.sobre .sobre_content {
+    letter-spacing: 1.5px;
+    padding-top: 20px;
+    line-height: 20px;
+    flex: 1;
+}
+
+.sobre .separacao1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex: 1;
+    gap: 15px;
+}
+
+.sobre .galeria img {
+    transition: all ease-in-out 0.4s;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    flex: 1;
+}
+
+.sobre .galeria img:hover {
+    width: 35%;
+    height: 35%;
+    object-fit: cover;
+    flex: 1;
+}
+
+.sobre .sobre_content1 {
+    letter-spacing: 1.5px;
+    padding-top: 20px;
+    line-height: 20px;
+    flex: 1;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sobre div h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    display:block;
+    width: 100%;
+}
+
+.sobre div h3 {
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display:block;
+    width: 100%;
+}
+
+.sobre p a {
+    color: aliceblue;
+}
+
+.sobre p {
+    overflow-wrap: break-word;
+}
+
+.foto1 {
+    transition: all ease-in-out 0.4s;
+    width: 25%;
+    height: auto;
+    align-items: left;
+}
+
+.foto1:hover {
+    width: 35%;
+    height: auto;
+}
+
+
+.foto2 {
+    width: 25%;
+    height: auto;
+    align-items: left;
+}
+
+.foto3 {
+    width: 25%;
+    height: auto;
+    align-items: left;
+}
+
+.foto4 {
+    width: 25%;
+    height: auto;
+    align-items: left;
+}
+
+.foto5 {
+    width: 25%;
+    height: auto;
+    align-items: left;
+}
